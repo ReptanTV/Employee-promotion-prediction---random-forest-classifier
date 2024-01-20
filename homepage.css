@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Poppins:wght@200&display=swap');
+
+html {
+ scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color:#ffc107;
+
+}
+.display-4 {
+    font-family: 'Anonymous Pro', monospace;
+font-family: 'Poppins', sans-serif;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1024px;
+    margin:0 auto;
+    padding:15px;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+.card-holder {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin:20px;
+    width:300px;
+    height:450px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #ffff;
+}
+
+.card-img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:15px;
+}
+
+.card-body {
+    width:100%;
+    height:100%;
+    top: 0;
+    right:-100%;
+    position:absolute;
+    backdrop-filter: blur(15px);
+    border-radius:15px;
+    color:#fff;
+    padding:15px;
+    display: flex;
+    flex-direction:column;
+    transition: 1s;
+}
+
+.card:hover .card-body {
+    right:0;
+}
+
+
+.card-title {
+    text-transform: uppercase;
+    font-size:25px;
+    font-weight: 500;
+
+}
+
+.card-sub-title {
+    font-size:14px;
+    font-weight: 300;
+}
+
+#ml-holder {
+    margin-top: 120px;
+    width:100%;
+    height:100%;
+    background-color: black;
+    color:white;
+    padding:20px;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+
+}
+.ml-title {
+
+    display: flex;
+    justify-content: center;
+    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ds-img {
+    padding:50px;
+    width: 900px;
+    height: auto;
+    position: absolute;
+    align-self: center;
+}
+/* static/css/style.css */
+input {
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+}
+.form-holder {
+    margin-top: 70px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
